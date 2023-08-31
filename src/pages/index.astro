@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Header from '../components/Header.astro'
+import List from '../components/List.astro'
+import { GET } from './api/todos.ts'
+let response = await GET(Astro)
+const todos = await response.json()
+---
+
+<Layout title='HTMX+ASTRO TODOS.'>
+ <main>
+  <Header />
+  <List todos={todos} />
+ </main>
+</Layout>

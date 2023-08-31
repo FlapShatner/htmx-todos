@@ -1,0 +1,26 @@
+---
+// import { todos } from '../../todos'
+import Create from './Create.astro'
+const { todos } = Astro.props
+---
+
+<div class='w-72 m-auto text-xl'>
+ <h2 class='text-3xl m-auto mt-8 mb-4 w-min border-b-2 px-2'>Things:</h2>
+ <div class='flex flex-col gap-2'>
+  <Create />
+  {
+   todos.map((todo) => (
+    <div class='flex border border-border p-2 rounded-xl'>
+     <input
+      class='ml-2 mr-4'
+      type='checkbox'
+      checked={todo.completed}
+     />
+     <div>
+      <p class='text-lg'>{todo.title}</p>
+     </div>
+    </div>
+   ))
+  }
+ </div>
+</div>

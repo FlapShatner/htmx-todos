@@ -1,0 +1,20 @@
+{
+  "name": "htmx-todo",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^5.0.0",
+    "@fontsource-variable/cabin": "^5.0.9",
+    "@fontsource-variable/rokkitt": "^5.0.9",
+    "@supabase/supabase-js": "^2.33.1",
+    "astro": "^3.0.3",
+    "tailwindcss": "^3.3.3"
+  }
+}
