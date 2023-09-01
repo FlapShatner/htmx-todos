@@ -1,8 +1,22 @@
 ---
-// import { todos } from '../../todos'
-import Create from './Create.astro'
-const { todos } = Astro.props
+import { XataClient } from '../xata'
+import Create from '../components/Create.astro'
 import type { Todo } from '../types'
+import { GET } from './api/todos'
+const xata = new XataClient({
+ apiKey: import.meta.env.XATA_API_KEY,
+ branch: import.meta.env.XATA_BRANCH,
+})
+if (Astro.request.method === 'POST') {
+ const formData = await Astro.request.formData()
+ const text = formData.get('text').toString()
+ const newTodo = await xata.db.todos.create({
+  text: text,
+  completed: false,
+ })
+}
+let response = await GET(Astro)
+const todos = await response.json()
 ---
 
 <div

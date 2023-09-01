@@ -12,8 +12,9 @@
   "dependencies": {
     "@astrojs/tailwind": "^5.0.0",
     "@fontsource-variable/cabin": "^5.0.9",
+    "@fontsource-variable/hanken-grotesk": "^5.0.9",
     "@fontsource-variable/rokkitt": "^5.0.9",
-    "@supabase/supabase-js": "^2.33.1",
+    "@xata.io/client": "^0.26.2",
     "astro": "^3.0.3",
     "tailwindcss": "^3.3.3"
   }

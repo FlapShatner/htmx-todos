@@ -19,6 +19,7 @@ module.exports = {
   extend: {
    fontFamily: {
     sans: ['"Cabin Variable"', ...defaultTheme.fontFamily.sans],
+    htmx: ['"Hanken Grotesk Variable"', ...defaultTheme.fontFamily.sans],
    },
   },
  },

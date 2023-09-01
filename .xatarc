@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Jordan-Roberts-s-workspace-54ds52.us-east-1.xata.sh/db/astro-todo",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}

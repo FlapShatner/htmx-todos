@@ -4,18 +4,27 @@
 
 <div class='text-base'>
  <form
-  hx-post='/create'
+  hx-indicator='#loader'
+  hx-post='/new'
+  hx-target='#new'
+  hx-swap='outerHTML'
   action='submit'
   class='flex flex-col gap-1'>
   <label for='title'>New thing:</label>
   <div class='flex w-full'>
    <input
-    class='w-full py-2 bg-gray-800 rounded-ss-xl rounded-es-xl'
-    name='title'
-    id='"title'
+    class='w-full p-2 bg-gray-800 rounded-ss-xl rounded-es-xl'
+    name='text'
+    id='text'
     type='text'
    />
    <button class='px-4 bg-gray-900 rounded-se-xl rounded-ee-xl'>Add</button>
   </div>
  </form>
+ <img
+  class='h-4 m-auto mt-2 htmx-indicator'
+  id='loader'
+  src='../../public/three-dots.svg'
+  alt='Loading'
+ />
 </div>
