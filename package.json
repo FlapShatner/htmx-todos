@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.0.0",
+    "@astrojs/vercel": "^4.0.3",
     "@fontsource-variable/cabin": "^5.0.9",
     "@fontsource-variable/hanken-grotesk": "^5.0.9",
     "@fontsource-variable/rokkitt": "^5.0.9",
